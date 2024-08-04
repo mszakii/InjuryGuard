@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e61a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000;
+  color: white;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+}
+
+header nav {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #000;
+  width: 100%;
+}
+
+header nav a {
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s;
+}
+
+header nav a:hover {
+  color: #e61a1a;
+}
+
+header .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105vh;
+}
+
+section {
+  display: grid;
+  grid-auto-rows: auto 1fr;
+  height: 100vh;
+  padding: 20px;
+}
+
+section .text {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+
+section .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+section img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+#pricing .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+section .card {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #141414;
+}
+
+section .card .title {
+  font-size: 1.5em;
+}
+
+section .card div {
+  padding: 5px 0;
+}
+
+section .card img {
+  width: 100%;
+}
+
+section .card .price span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section .feat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .feat .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+section .feat .right {
+  width: 70%;
+}
+
+section .feat .right ul li {
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
