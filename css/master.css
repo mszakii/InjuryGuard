@@ -61,7 +61,7 @@ header .home {
 section {
   display: grid;
   grid-auto-rows: auto 1fr;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -140,6 +140,7 @@ section .feat .right ul li {
 }
 
 footer {
+  margin-top: 20px;
   padding: 20px;
   text-align: center;
 }
