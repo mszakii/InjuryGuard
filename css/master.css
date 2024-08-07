@@ -39,11 +39,12 @@ header nav {
   padding: 20px;
   background: #fafafa;
   width: 100%;
+  border-bottom: 3px solid #e61a1a;
 }
 
 header nav a {
   font-weight: bold;
-  color: #e61a1a;
+  color: #000;
   transition: color 0.5s;
   user-select: none;
 }
@@ -56,6 +57,7 @@ header .home {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 100vh;
+  max-height: 1000px;
 }
 
 header .home .left {
@@ -65,7 +67,7 @@ header .home .left {
 }
 
 header .home .left img {
-  width: 900px;
+  width: 800px;
 }
 
 @media (max-width: 767px) {

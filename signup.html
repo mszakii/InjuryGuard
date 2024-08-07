@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/deep.css" />
+    <link
+      rel="shortcut icon"
+      href="./asset/InjuryGuard.png"
+      type="image/x-icon"
+    />
+    <title>InjuryGuard</title>
+    <title>Deep Learning</title>
+  </head>
+  <body>
+    <section>
+      <div class="title">InjuryGuard</div>
+      <form action="/addUser" method="post">
+        <div class="group">
+          <input
+            type="text"
+            name="userName"
+            placeholder="User Name"
+            minlength="10"
+            required
+          />
+
+          <input type="date" name="userBirth" required />
+
+          <input
+            type="mail"
+            name="userMail"
+            placeholder="Email"
+            length="10"
+            required
+          />
+
+          <input
+            type="text"
+            name="injuryGuardId"
+            placeholder="InjuryGuard 10-digit ID"
+            length="10"
+            required
+          />
+
+          <input
+            type="password"
+            name="userPassword"
+            placeholder="Password"
+            minlength="8"
+            required
+          />
+
+          <select name="age" id="age" required>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+
+          <select name="activty" id="activity" required>
+            <option value="low">duck</option>
+            <option value="moderate">Moderate</option>
+            <option value="egular">Regular</option>
+            <option value="intensive">Intensive</option>
+            <option value="very intensive">Very Intensive</option>
+          </select>
+
+          <input
+            type="text"
+            name="sportType"
+            placeholder="What Sport do you play?"
+          />
+        </div>
+
+        <button>Create new account</button>
+      </form>
+    </section>
+  </body>
+</html>
