@@ -37,14 +37,15 @@ header nav {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background: #000;
+  background: #fafafa;
   width: 100%;
 }
 
 header nav a {
   font-weight: bold;
-  color: white;
+  color: #e61a1a;
   transition: color 0.5s;
+  user-select: none;
 }
 
 header nav a:hover {
@@ -65,6 +66,15 @@ header .home .left {
 
 header .home .left img {
   width: 900px;
+}
+
+@media (max-width: 767px) {
+  header nav {
+    display: none;
+  }
+  header .home .left {
+    display: none;
+  }
 }
 
 header .home .right {
@@ -154,6 +164,9 @@ section .feat .left {
 
 section .feat .right {
   width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section .feat .right ul li {
